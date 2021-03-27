@@ -1,0 +1,6 @@
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage
+https://www.site24x7.com/tools/image-to-datauri.html
+https://www.site24x7.com/tools/datauri-to-image.html
+https://www.npmjs.com/package/image-data-uri
+https://www.npmjs.com/package/qrcode
+https://www.npmjs.com/package/canvas

@@ -1,0 +1,38 @@
+{
+    "photo": "-any logo string representation here-",
+    "dark": "color name",
+    "light": "color name",
+    "width": "number",
+    "text": "text",
+    "maskPattern":"number"
+}
+using postman or any similar behavior application that allows you to send requests, send a request containing one of the following:
+1)[photo, text, dark color, light color, mask pattern, width] => you will get 200 OK response with a String representation of an image containing the text QR code with the predefined parameters with a photo (logo)at it's center.
+2)[text, dark color, light color, mask pattern, width] => you will get 200 OK response with a String representation of an image containing the text QR code with the predefined parameters.
+
+***********************************
+Notes
+***********************************
+-If the you didn't send any of the parameters except the text => you will get 200 OK response with a String representation of an image containing the text QR code with the predefined parameters and default values.
+
+-if the width was too small to occupy the QR code it will be neglected. 
+
+-if any of the two colors was not sent in the request it will use the default colors (black and white).
+
+-if any of the two colors names was not correct => a 400 Internal Server Error response will be sent with error message: please enter a valid color.
+
+-if the dark color sent in the request wasn't darker than the light color => a 400 Internal Server Error response will be sent with error message: Sorry the dark color must be darker than the light color.
+
+-if the maskPattern is smaller than 0 o bigger than 7 => a 400 Internal Server Error response will sent with error message: maskPattern must be a number between 0-7.
+
+********************
+there is request example in the sampleRequest.txt file to test the API and you can change parameter as the above instructions
+by using those names:
+{
+    "photo": "-any logo string representation here-",
+    "dark": "color name",
+    "light": "color name",
+    "width": "number",
+    "text": "text",
+    "maskPattern":"number"
+}
