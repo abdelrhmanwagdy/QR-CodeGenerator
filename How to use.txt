@@ -13,6 +13,8 @@ using postman or any similar behavior application that allows you to send reques
 ***********************************
 Notes
 ***********************************
+-There are commented lines to change the image in the respone from string representation to save it on the server as .png file.
+
 -If the you didn't send any of the parameters except the text => you will get 200 OK response with a String representation of an image containing the text QR code with the predefined parameters and default values.
 
 -if the width was too small to occupy the QR code it will be neglected. 
